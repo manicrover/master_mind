@@ -1,0 +1,32 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">sno</th>
+            <th scope="col">Exam</th>
+            <th scope="col">website</th>
+     
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><a href="article/">jee</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>nda</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">neet</td>
+            
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
