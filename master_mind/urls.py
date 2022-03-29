@@ -22,5 +22,7 @@ urlpatterns = [
     path('hacker/', admin.site.urls),
     path('',include("home.urls")),
     path('blog/',include("blog.urls")),
+    #spath('article/',include("blog.urls")),
+    
     
 ]
