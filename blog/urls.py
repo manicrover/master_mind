@@ -19,11 +19,13 @@ from django.urls import path, include
 from . import views
 from blog.models import blog
 
-
+# 
 urlpatterns = [
     
     path('',views.index),
-    path('article/',views.article)
+    path('article/',views.article),
+    path('neet/',views.neet),
+    
 ]
 
 # 

@@ -2,36 +2,43 @@
 
 {% load static %}
 {% block content %}
-<h1>
-    {{ name }}
-</h1>
-<ul>
-    <li>
-        {{ age }}
-    </li>
-    <li>
-        {{ subs }}
-    </li>
-    <li>
-        {{ p_criteria }}
-    </li>
-    <li>
-        {{ study_mno }}
-    </li>
-    <li>
-        {{ cut_off }}
-    </li>
+<div class="mx-3 px-4 mx-auto">
+    <h1>
+        {{ name }}
+    </h1>
+    <ul>
+        <li>
+            {{ age }}
+        </li>
+        <li>
+            {{ subs }}
+        </li>
+        <li>
 
-</ul>
-<h2>
-    more details
-</h2>
-<p>
-   {{ details }}
-</p>
-<a href="{{ official }}">official website</a>
-<a href="{{ registeration }}">registration</a>
-<ul>
+            {{ p_criteria }}
 
-    <p>{{ source }}</p>
-    {% endblock %}
+        </li>
+        <li>
+            <pre>
+            {{ study_mno }}
+        </pre>
+
+        </li>
+        <li>
+            {{ cut_off }}
+        </li>
+
+    </ul>
+    <h2>
+        more details
+    </h2>
+    <p>
+        {{ details }}
+    </p>
+    <a href="{{ official }}">official website</a>
+    <a href="{{ registeration }}">registration</a>
+    <ul>
+
+        <p>{{ source }}</p>
+</div>
+{% endblock %}

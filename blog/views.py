@@ -25,17 +25,31 @@ def make_dict( name="none"):
 
 def index(request):
     raw_qs = blog.objects.all()
+    params = {}
     names = []
     pipelines = []
     for i in raw_qs:
-        print(i.name_of_exam)
         names.append(i.name_of_exam)
         pipelines.append("")
-        
-    return render(request, "blog/index.html")
+
+    params['names']=names
+    params['urls']=pipelines
+
+    # temp code 
+    # params = {}
+    # raw_qs = blog.objects.all()
+
+
+    # tce
+    return render(request, "blog/index.html", params)
 
 
 def article(request):
-    params = make_dict(name="examination2")
+    params = make_dict(name="JEE(mains)")
     # print(params)
+    return render(request, "blog/article.html",params)
+
+def neet(request):
+    params = make_dict(name="NEET")
+    print(len(params))
     return render(request, "blog/article.html",params)

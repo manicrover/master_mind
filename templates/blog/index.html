@@ -7,26 +7,37 @@
         <tr>
             <th scope="col">sno</th>
             <th scope="col">Exam</th>
-            <th scope="col">website</th>
-     
+   
+
         </tr>
     </thead>
     <tbody>
+
+        
         <tr>
             <th scope="row">1</th>
-            <td><a href="/blog/article">jee</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>nda</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">neet</td>
+            <td>
+                <form action="/blog/article" method="get">
+                    
+                    <button  class="text btn btn-outline-primary" type="submit">JEE(mains)</button>
+                </form>
+            </td>
             
         </tr>
+        
+
+        
+        <tr>
+            <th scope="row">2</th>
+            <td>
+                
+                <form action="/blog/neet" method="get">
+                    <button class="text btn btn-outline-primary" type="submit">NEET</button>
+                </form>
+            </td>
+            
+        </tr>
+        
     </tbody>
 </table>
 {% endblock %}
