@@ -3,24 +3,35 @@
 {% load static %}
 {% block content %}
 <h1>
-    heading
+    {{ name }}
 </h1>
 <ul>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non at culpa exercitationem molestiae laborum aliquid quos, tenetur ad voluptatum fugit aspernatur? Eaque deserunt vitae aspernatur fugit facilis, cupiditate voluptatem.</li>
-    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, corporis labore? Voluptates fuga repudiandae asperiores odit praesentium ex distinctio mollitia numquam, quae nihil autem nam reprehenderit quibusdam tempora aliquid eos.</li>
-    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, nobis consectetur esse nam nihil facere libero sed, sapiente totam in animi officiis. Consectetur, porro ex laborum velit iure facere temporibus!</li>
+    <li>
+        {{ age }}
+    </li>
+    <li>
+        {{ subs }}
+    </li>
+    <li>
+        {{ p_criteria }}
+    </li>
+    <li>
+        {{ study_mno }}
+    </li>
+    <li>
+        {{ cut_off }}
+    </li>
 
 </ul>
 <h2>
     more details
 </h2>
 <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, totam eos mollitia officia ut, eligendi repellat fugiat illo omnis assumenda, id consequuntur adipisci voluptatem natus iusto velit tempora. Ut, reiciendis.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat harum blanditiis architecto quisquam ex fugiat? Id numquam dolorum doloremque, vero quisquam perferendis, ex provident fugit, sit dolores illum labore incidunt?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptates consequatur cum recusandae non voluptatum quae. Consequatur fugiat quidem nemo eaque ut atque sequi, voluptate sed, laudantium, dolorum molestiae reprehenderit.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, consectetur! Vel architecto, ratione voluptate doloremque obcaecati eligendi iusto quaerat possimus voluptatem, laborum omnis blanditiis saepe ex, sunt in? Facilis, officiis.
-
+   {{ details }}
 </p>
-<a href="">official website</a>
-<a href="">registration</a>
-{% endblock %}
+<a href="{{ official }}">official website</a>
+<a href="{{ registeration }}">registration</a>
+<ul>
+
+    <p>{{ source }}</p>
+    {% endblock %}

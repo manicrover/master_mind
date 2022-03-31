@@ -17,7 +17,7 @@ from turtle import home
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-
+from blog.models import blog
 
 
 urlpatterns = [
@@ -25,3 +25,13 @@ urlpatterns = [
     path('',views.index),
     path('article/',views.article)
 ]
+
+# 
+extended_patterns = [
+
+]
+
+raw_qs = blog.objects.all()
+
+# for i in raw_qs:
+#     urlpatterns.append(path(str(i.)))
